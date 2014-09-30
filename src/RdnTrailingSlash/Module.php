@@ -11,6 +11,11 @@ class Module
 {
     public function onBootstrap(MvcEvent $event)
     {
+        if (PHP_SAPI == 'cli')
+        {
+            return;
+        }
+
         $events = $event->getApplication()->getEventManager();
         $events->attach(MvcEvent::EVENT_ROUTE, array($this, 'onRoute'), 1000);
     }
