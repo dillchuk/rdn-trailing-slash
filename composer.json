@@ -1,7 +1,7 @@
 {
     "name": "radnan/rdn-trailing-slash",
-    "description": "Zend Framework 2 module to trim trailing slashes from requests",
-    "keywords": ["zf2", "zend", "redirect", "trailing", "slash"],
+    "description": "Zend Framework module to trim trailing slashes from requests",
+    "keywords": ["zf2", "zf3", "zend", "redirect", "trailing", "slash"],
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "zendframework/zend-mvc": "2.*"
+        "zendframework/zend-mvc": "2.* | ^3.0"
     },
     "require-dev": {
         "zendframework/zend-http": "2.*"
